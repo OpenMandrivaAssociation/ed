@@ -2,7 +2,7 @@
 
 Summary:	The GNU line editor
 Name:		ed
-Version:	0.6
+Version:	0.7
 Release:	%mkrel 1
 License:	GPL
 Group:		Text tools
@@ -28,7 +28,7 @@ much.
 %patch0 -p1
 
 %build
-./configure --exec-prefix=%{_exec_prefix} --prefix=/usr --sysconfdir=/etc
+%configure2_5x
 
 %make CFLAGS="%{optflags}"
 
@@ -56,5 +56,3 @@ rm -rf %{buildroot}
 /bin/red
 %{_infodir}/ed.info*
 %{_mandir}/*/*
-
-

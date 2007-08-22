@@ -4,7 +4,7 @@ Summary:	The GNU line editor
 Name:		ed
 Version:	0.8
 Release:	%mkrel 1
-License:	GPL
+License:	GPLv3+
 Group:		Text tools
 URL:		http://www.gnu.org/software/ed/ed.html
 Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.bz2

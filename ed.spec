@@ -11,7 +11,6 @@ Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.bz2
 Patch0:		ed-0.4-install.patch
 Requires(post): info-install
 Requires(preun):info-install
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Ed is a line-oriented text editor, used to create, display, and modify text

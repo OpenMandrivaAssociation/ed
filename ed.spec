@@ -3,7 +3,7 @@
 Summary:	The GNU line editor
 Name:		ed
 Version:	0.9
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv3+
 Group:		Text tools
 URL:		http://www.gnu.org/software/ed/ed.html

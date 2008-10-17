@@ -2,7 +2,7 @@
 
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.0
+Version:	1.1
 Release:	%mkrel 1
 License:	GPLv3+
 Group:		Text tools
@@ -28,10 +28,11 @@ much.
 %patch0 -p1 -b .orig
 
 %build
-%configure2_5x --bindir=/bin
+%configure2_5x --bindir=/bin CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LDFLAGS="%{?ldflags}"
 
-%make CFLAGS="%{optflags}"
+%make
 
+%check
 # all tests must pass
 make check
 

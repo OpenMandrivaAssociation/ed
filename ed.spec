@@ -2,13 +2,12 @@
 
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.1
-Release:	%mkrel 2
+Version:	1.2
+Release:	%mkrel 1
 License:	GPLv3+
 Group:		Text tools
 URL:		http://www.gnu.org/software/ed/ed.html
-Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.bz2
-Patch0:		ed-1.0-install.patch
+Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.gz
 Requires(post): info-install
 Requires(preun):info-install
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -25,11 +24,9 @@ much.
 
 %prep
 %setup -q
-%patch0 -p1 -b .orig
 
 %build
 %configure2_5x --bindir=/bin CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LDFLAGS="%{?ldflags}"
-
 %make
 
 %check

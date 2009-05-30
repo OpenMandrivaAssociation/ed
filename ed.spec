@@ -2,7 +2,7 @@
 
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.2
+Version:	1.3
 Release:	%mkrel 1
 License:	GPLv3+
 Group:		Text tools

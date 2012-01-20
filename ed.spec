@@ -2,15 +2,14 @@
 
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.5
-Release:	%mkrel 2
+Version:	1.6
+Release:	%mkrel 1
 License:	GPLv3+
 Group:		Text tools
 URL:		http://www.gnu.org/software/ed/ed.html
 Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.gz
 Requires(post): info-install
 Requires(preun):info-install
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Ed is a line-oriented text editor, used to create, display, and modify text

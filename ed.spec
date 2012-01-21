@@ -1,9 +1,7 @@
-%define	_exec_prefix	/
-
 Summary:	The GNU line editor
 Name:		ed
 Version:	1.6
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPLv3+
 Group:		Text tools
 URL:		http://www.gnu.org/software/ed/ed.html
@@ -25,7 +23,7 @@ much.
 %setup -q
 
 %build
-%configure2_5x --bindir=/bin CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LDFLAGS="%{?ldflags}"
+%configure2_5x --bindir=/bin --exec-prefix=/ CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LDFLAGS="%{?ldflags}"
 %make
 
 %check

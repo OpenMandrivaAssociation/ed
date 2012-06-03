@@ -1,21 +1,19 @@
 Summary:	The GNU line editor
 Name:		ed
 Version:	1.6
-Release:	%mkrel 4
+Release:	5
 License:	GPLv3+
 Group:		Text tools
 URL:		http://www.gnu.org/software/ed/ed.html
 Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.gz
-Requires(post): info-install
-Requires(preun):info-install
 
 %description
 Ed is a line-oriented text editor, used to create, display, and modify text
-files (both interactively and via shell scripts).  For most purposes, ed has
+files (both interactively and via shell scripts). For most purposes, ed has
 been replaced in normal usage by full-screen editors (emacs and vi, for
 example).
 
-Ed was the original UNIX editor, and may be used by some programs.  In general,
+Ed was the original UNIX editor, and may be used by some programs. In general,
 however, you probably don't need to install it and you probably won't use it
 much.
 
@@ -32,20 +30,9 @@ make check
 
 %install
 rm -rf %{buildroot}
-
 %makeinstall_std
 
-%post
-%_install_info %{name}.info
-
-%preun
-%_remove_install_info %{name}.info
-
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root,0755)
 %doc NEWS README AUTHORS TODO ChangeLog
 /bin/ed
 /bin/red

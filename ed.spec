@@ -4,7 +4,7 @@ Version:	1.7
 Release:	1
 License:	GPLv3+
 Group:		Text tools
-URL:		http://www.gnu.org/software/ed/ed.html
+Url:		http://www.gnu.org/software/ed/ed.html
 Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.gz
 Source1:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.gz.sig
 
@@ -44,3 +44,4 @@ make check
 /bin/red
 %{_infodir}/ed.info*
 %{_mandir}/*/*
+

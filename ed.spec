@@ -25,7 +25,7 @@ much.
 %configure2_5x \
 	--bindir=/bin \
 	--exec-prefix=/ \
-	CFLAGS="%{optflags}" \
+	CFLAGS="%{optflags}" CC="%__cc" \
 	CXXFLAGS="%{optflags}" \
 	LDFLAGS="%{?ldflags}"
 

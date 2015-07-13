@@ -1,6 +1,3 @@
-removed_sources:
-  ed-1.7.tar.gz: c14633332ff7b339878cbef0d09aab0e7298c5c6
 sources:
-  ed-1.7.tar.gz.sig: 8887be70ef4dad612c634ba618f6d05550102c2b
-  ed-1.9.tar.gz: a7f01929eb9ae5fe2d3255cd99e41a2211571984
-  ed-1.9.tar.gz.sig: 57ad4740a2050fa9f61382112bba3402e4020652
+  ed-1.12.tar.lz: 095760399ea0e54fdfb4e17f5f7f093fbccb2f33
+  ed-1.12.tar.lz.sig: 561dfb5be9bcf0d9995e215619f9a6c639610e72

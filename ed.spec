@@ -1,7 +1,7 @@
 Summary:	The GNU line editor
 Name:		ed
 Version:	1.12
-Release:	8
+Release:	9
 License:	GPLv3+
 Group:		Text tools
 Url:		http://www.gnu.org/software/ed/ed.html

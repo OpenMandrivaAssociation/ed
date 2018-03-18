@@ -1,12 +1,12 @@
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.12
-Release:	9
+Version:	1.14.2
+Release:	1
 License:	GPLv3+
 Group:		Text tools
 Url:		http://www.gnu.org/software/ed/ed.html
 Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.lz
-Source1:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.lz.sig
+BuildRequires:	lzip
 
 %description
 Ed is a line-oriented text editor, used to create, display, and modify text
@@ -25,18 +25,18 @@ much.
 %configure \
 	--bindir=/bin \
 	--exec-prefix=/ \
-	CFLAGS="%{optflags}" CC="%__cc" \
+	CFLAGS="%{optflags}" CC="%{__cc}" \
 	CXXFLAGS="%{optflags}" \
 	LDFLAGS="%{?ldflags}"
 
-%make
+%make_build
 
 %check
 # all tests must pass
 make check
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc NEWS README AUTHORS TODO ChangeLog

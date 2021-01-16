@@ -1,11 +1,11 @@
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.15
+Version:	1.17
 Release:	1
 License:	GPLv3+
 Group:		Text tools
 Url:		http://www.gnu.org/software/ed/ed.html
-Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-1.15.tar.lz
+Source0:	ftp://ftp.gnu.org/pub/gnu/ed/ed-%{version}.tar.lz
 BuildRequires:	lzip
 
 %description
@@ -29,18 +29,18 @@ much.
 	CXXFLAGS="%{optflags}" \
 	LDFLAGS="%{?ldflags}"
 
-%make
+%make_build
 
 %check
 # all tests must pass
 make check
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc NEWS README AUTHORS TODO ChangeLog
-/bin/ed
-/bin/red
+%{_bindir}/ed
+%{_bindir}/red
 %{_infodir}/ed.info*
 %{_mandir}/*/*

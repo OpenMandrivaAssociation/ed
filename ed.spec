@@ -40,7 +40,7 @@ make check
 
 %files
 %doc NEWS README AUTHORS TODO ChangeLog
-%{_bindir}/ed
-%{_bindir}/red
+/bin/ed
+/bin/red
 %{_infodir}/ed.info*
 %{_mandir}/*/*

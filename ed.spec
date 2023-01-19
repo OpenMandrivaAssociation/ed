@@ -1,11 +1,11 @@
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.18
+Version:	1.19
 Release:	1
 License:	GPLv3+
 Group:		Text tools
 Url:		http://www.gnu.org/software/ed/ed.html
-Source0:	http://ftpmirror.gnu.org/gnu/ed/ed-1.18.tar.lz
+Source0:	http://ftpmirror.gnu.org/gnu/ed/%{name}-%{version}.tar.lz
 BuildRequires:	lzip
 
 %description
@@ -23,9 +23,9 @@ much.
 
 %build
 %configure \
-	CFLAGS="%{optflags}" CC="%{__cc}" \
+	CFLAGS="%{optflags} -Oz" CC="%{__cc}" \
 	CXXFLAGS="%{optflags}" \
-	LDFLAGS="%{?ldflags}"
+	LDFLAGS="%{?build_ldflags}"
 
 %make_build
 
@@ -40,5 +40,5 @@ make check
 %doc NEWS README AUTHORS ChangeLog
 %{_bindir}/ed
 %{_bindir}/red
-%{_infodir}/ed.info*
-%{_mandir}/*/*
+%doc %{_infodir}/ed.info*
+%doc %{_mandir}/*/*

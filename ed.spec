@@ -4,7 +4,7 @@ Version:	1.20.2
 Release:	1
 License:	GPLv3+
 Group:		Text tools
-Url:		http://www.gnu.org/software/ed/ed.html
+Url:		https://www.gnu.org/software/ed/ed.html
 Source0:	http://ftpmirror.gnu.org/gnu/ed/%{name}-%{version}.tar.lz
 BuildRequires:	lzip
 

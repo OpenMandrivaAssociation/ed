@@ -6,6 +6,11 @@ License:	GPLv3+
 Group:		Text tools
 Url:		https://www.gnu.org/software/ed/ed.html
 Source0:	http://ftpmirror.gnu.org/gnu/ed/%{name}-%{version}.tar.lz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	lzip
 
 %description

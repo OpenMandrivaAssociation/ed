@@ -1,6 +1,6 @@
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.22.3
+Version:	1.22.4
 Release:	1
 License:	GPLv3+
 Group:		Text tools

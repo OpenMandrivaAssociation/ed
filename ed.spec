@@ -1,6 +1,6 @@
 Summary:	The GNU line editor
 Name:		ed
-Version:	1.22.4
+Version:	1.22.5
 Release:	1
 License:	GPLv3+
 Group:		Text tools
@@ -8,7 +8,6 @@ Url:		https://www.gnu.org/software/ed/ed.html
 Source0:	http://ftpmirror.gnu.org/gnu/ed/%{name}-%{version}.tar.lz
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires:	lzip
